@@ -8,5 +8,11 @@ a {
 }
 // a:link,
 // a:visited {
-
+    
 // }
+input {
+    border: none;
+}
+input:focus {
+    outline: none;
+}

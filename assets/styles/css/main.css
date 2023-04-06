@@ -8,6 +8,14 @@ a {
   text-decoration: none;
 }
 
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 @font-face {
   font-family: Poppins;
   src: url(../../fonts/Poppins-Regular.ttf);
@@ -34,6 +42,10 @@ body {
   font-weight: 400;
 }
 
+input {
+  font-family: Poppins;
+}
+
 .header-container {
   max-width: 1380px;
   margin: 0 auto;
@@ -48,9 +60,28 @@ body {
   line-height: 20px;
   color: #fff;
   display: flex;
-  flex-direction: initial;
   justify-content: center;
   align-items: center;
+  flex-direction: initial;
+}
+
+.btn-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+  width: 162px;
+  height: 48px;
+  background-color: #E7EFF3;
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 177.9%;
+  color: #1090CB;
+}
+
+.btn-hero.active {
+  background-color: #1090CB;
+  color: #fff;
 }
 
 .header {
@@ -60,15 +91,15 @@ body {
 .header-navigation--wrapper {
   height: 100%;
   display: flex;
-  flex-direction: initial;
   justify-content: space-between;
   align-items: center;
+  flex-direction: initial;
 }
 .header-navigation {
   display: flex;
-  flex-direction: initial;
   justify-content: space-between;
   align-items: center;
+  flex-direction: initial;
 }
 .header-navigation--links {
   margin-right: 70px;
@@ -85,5 +116,69 @@ body {
 }
 
 .hero {
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  flex-direction: column;
   padding-top: 72px;
+  text-align: center;
+}
+.hero-title {
+  width: 320px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 177.9%;
+  color: #000;
+}
+.hero-title span {
+  color: #1090CB;
+}
+.hero-description {
+  width: 432px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 189.5%;
+  color: #777;
+  margin: 41px auto 52px;
+}
+.hero-form {
+  position: relative;
+  width: 400px;
+  height: 49px;
+  margin-bottom: 66px;
+}
+.hero-form input[type=text] {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: #F1F1F1;
+  padding-left: 60px;
+  line-height: 189.5%;
+  color: #727272;
+}
+.hero-form input::-moz-placeholder {
+  line-height: 189.5%;
+  color: #727272;
+}
+.hero-form input::placeholder {
+  line-height: 189.5%;
+  color: #727272;
+}
+.hero-form::before {
+  content: url(../../images/icons/search_icon.svg);
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 25px;
+  top: 45%;
+  transform: translateY(-50%);
+}
+.hero-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: initial;
+  max-width: 950px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

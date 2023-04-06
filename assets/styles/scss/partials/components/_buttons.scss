@@ -10,3 +10,18 @@
 
     @include flex-row(center, center, initial);
 }
+.btn-hero {
+    @include flex-row(center, center, initial);
+    width: 162px;
+    height: 48px;
+    background-color: $color-blue-light;
+    border-radius: 30px;
+
+    font-size: 14px;
+    line-height: 177.9%;
+    color: $color-blue;
+}
+.btn-hero.active {
+    background-color: $color-blue;
+    color: $color-white;
+}

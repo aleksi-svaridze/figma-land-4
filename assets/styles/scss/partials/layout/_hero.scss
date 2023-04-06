@@ -1,7 +1,71 @@
 .hero {
+    @include flex-row (initial, center, column);
     padding-top: 72px;
+    text-align: center;
 
     &-title {
+        width: 320px;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 177.9%;
+        color: $color-black;
 
+        span {
+            color: $color-blue;
+        }
+    }
+
+    &-description {
+        width: 432px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 189.5%;
+        color: $color-gray-4;
+
+        margin: 41px auto 52px;
+    }
+
+    &-form {
+        position: relative;
+        width: 400px;
+        height: 49px;
+        margin-bottom: 66px;
+
+        input[type='text'] {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background: $color-gray-9;
+            padding-left: 60px;
+
+            line-height: 189.5%;
+            color: $color-gray-5;
+        }
+
+        input::placeholder {
+            line-height: 189.5%;
+            color: $color-gray-5;
+        }
+
+        &::before {
+            content: url(../../images/icons/search_icon.svg);
+            display: block;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            left: 25px;
+            top: 45%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &-navigation {
+        @include flex-row(space-between, center, initial);
+        max-width: 950px;
+        width: 100%;
+
+        &--links {
+
+        }
     }
 }
