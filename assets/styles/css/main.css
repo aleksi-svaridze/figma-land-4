@@ -51,6 +51,11 @@ input {
   margin: 0 auto;
 }
 
+.posts-container {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+
 .btn-contact {
   background-color: #1090CB;
   border-radius: 6px;
@@ -102,9 +107,22 @@ input {
   flex-direction: initial;
 }
 .header-navigation--links {
+  position: relative;
   margin-right: 70px;
   line-height: 24px;
   color: #000;
+}
+.header-navigation .active {
+  color: #1090CB;
+}
+.header-navigation .badge {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: -10px;
+  top: -4px;
+  background: #08D3BB;
+  border-radius: 50%;
 }
 
 .brand {
@@ -181,4 +199,8 @@ input {
   flex-direction: initial;
   max-width: 950px;
   width: 100%;
+}
+
+.main-post {
+  padding: 109px 0 136px;
 }/*# sourceMappingURL=main.css.map */

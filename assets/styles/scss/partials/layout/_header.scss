@@ -11,9 +11,22 @@
         @include flex-row (space-between, center, initial);
     
         &--links {
+            position: relative;
             margin-right: 70px;
             line-height: 24px;
             color: $color-black;
+        }
+        .active {
+            color: $color-blue;
+        }
+        .badge {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            left: -10px;
+            top: -4px;
+            background: $color-green;
+            border-radius: 50%;
         }
     }
 }
