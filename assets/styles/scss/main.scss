@@ -1,0 +1,17 @@
+// ==========> Basis
+@import './partials/basis/reset';
+@import './partials/basis/fonts';
+@import './partials/basis/variables';
+@import './partials/basis/typography';
+
+// ===========> Components
+@import './partials/components/buttons';
+@import './partials/components/cards';
+
+// ===========> Layouts
+@import './partials/layout/header';
+@import './partials/layout/hero';
+@import './partials/layout/main-post';
+@import './partials/layout/posts';
+@import './partials/layout/form';
+@import './partials/layout/footer';
