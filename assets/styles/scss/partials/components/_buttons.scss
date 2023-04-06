@@ -1,0 +1,12 @@
+.btn-contact {
+    background-color: $color-blue;
+    border-radius: 6px;
+    width: 125px;
+    height: 41px;
+
+    font-size: 13px;
+    line-height: 20px;
+    color: $color-white;
+
+    @include flex-row(center, center, initial);
+}

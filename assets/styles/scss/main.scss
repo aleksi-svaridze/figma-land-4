@@ -3,8 +3,10 @@
 @import './partials/basis/fonts';
 @import './partials/basis/variables';
 @import './partials/basis/typography';
+@import './partials/basis/mixins';
 
 // ===========> Components
+@import './partials/components/containers';
 @import './partials/components/buttons';
 @import './partials/components/cards';
 
