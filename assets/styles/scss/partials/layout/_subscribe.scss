@@ -1,0 +1,54 @@
+.subscribe {
+    padding: 148px 0;
+    background-color: $color-blue-light-extra;
+    @include flex-row(center, center, column);
+    row-gap: 80px;
+    position: relative;
+
+    &-title {
+        max-width: 516px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 170%;
+        text-align: center;
+        color: $color-black-secondary;
+        position: relative;
+    }
+    &-title::after {
+        content: url(../../images/icons/pai-chart_icon.svg);
+        position: absolute;
+        right: -60px;
+        top: -50px;
+        width: 54px;
+        height: 54px;
+    }
+    &-form {
+        @include flex-row(space-between, center, initial);
+        column-gap: 14px;
+
+        &--input {
+            line-height: 170%;
+            color: $color-gray-10;
+            width: 532px;
+            height: 67px;
+            padding: 20px 36px;
+    
+            background: $color-white;
+            box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.07);
+            border-radius: 10px;
+        }
+
+        &--input::placeholder {
+            line-height: 170%;
+            color: $color-gray-10;
+        } 
+    }
+}
+.subscribe::after {
+    content: url(../../images/icons/star_icon.svg);
+        position: absolute;
+        left: 180px;
+        top: -45px;
+        width: 66px;
+        height: 66px;
+}

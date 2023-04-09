@@ -1,0 +1,26 @@
+.posts {
+    padding: 35px 0 160px;
+}
+.card {
+    @include flex-row(initial, initial, column);
+    max-width: 333px;
+
+    &-img {
+        width: 100%;
+        border-radius: 45px;
+        margin-bottom: 40px;
+    }
+    &-title {
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 177.9%;
+        color: $color-black;
+        margin-bottom: 25px;
+    }
+    &-desc {
+        text-align: justify;
+        line-height: 210.9%;
+        color: $color-gray-1;
+        margin-bottom: 18px;
+    }
+}

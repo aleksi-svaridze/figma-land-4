@@ -16,6 +16,11 @@ input:focus {
   outline: none;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 @font-face {
   font-family: Poppins;
   src: url(../../fonts/Poppins-Regular.ttf);
@@ -54,6 +59,11 @@ input {
 .posts-container {
   max-width: 1130px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 65px;
+       column-gap: 65px;
+  row-gap: 135px;
 }
 
 .btn-contact {
@@ -94,6 +104,21 @@ input {
   font-size: 14px;
   line-height: 177.9%;
   color: #1090CB;
+}
+
+.subscribe-form--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+  width: 173px;
+  height: 67px;
+  background: #000;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 170%;
+  color: #FFF4F4;
 }
 
 .header {
@@ -209,7 +234,7 @@ input {
 }
 
 .main-post {
-  padding: 109px 0 136px;
+  padding: 109px 0 100px;
 }
 .main-post--item {
   display: flex;
@@ -275,4 +300,97 @@ input {
   font-size: 14px;
   line-height: 1;
   color: #7B7B7B;
+}
+
+.posts {
+  padding: 35px 0 160px;
+}
+
+.card {
+  display: flex;
+  justify-content: initial;
+  align-items: initial;
+  flex-direction: column;
+  max-width: 333px;
+}
+.card-img {
+  width: 100%;
+  border-radius: 45px;
+  margin-bottom: 40px;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 177.9%;
+  color: #000;
+  margin-bottom: 25px;
+}
+.card-desc {
+  text-align: justify;
+  line-height: 210.9%;
+  color: #424242;
+  margin-bottom: 18px;
+}
+
+.subscribe {
+  padding: 148px 0;
+  background-color: #E8F4FA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 80px;
+  position: relative;
+}
+.subscribe-title {
+  max-width: 516px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 170%;
+  text-align: center;
+  color: #252525;
+  position: relative;
+}
+.subscribe-title::after {
+  content: url(../../images/icons/pai-chart_icon.svg);
+  position: absolute;
+  right: -60px;
+  top: -50px;
+  width: 54px;
+  height: 54px;
+}
+.subscribe-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: initial;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+}
+.subscribe-form--input {
+  line-height: 170%;
+  color: #787878;
+  width: 532px;
+  height: 67px;
+  padding: 20px 36px;
+  background: #fff;
+  box-shadow: 0px 4px 84px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+.subscribe-form--input::-moz-placeholder {
+  line-height: 170%;
+  color: #787878;
+}
+.subscribe-form--input::placeholder {
+  line-height: 170%;
+  color: #787878;
+}
+
+.subscribe::after {
+  content: url(../../images/icons/star_icon.svg);
+  position: absolute;
+  left: 180px;
+  top: -45px;
+  width: 66px;
+  height: 66px;
 }/*# sourceMappingURL=main.css.map */

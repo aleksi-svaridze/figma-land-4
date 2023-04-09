@@ -31,3 +31,14 @@
     line-height: 177.9%;
     color: $color-blue;
 }
+.subscribe-form--btn {
+    @include flex-row(center, center, initial);
+    width: 173px;
+    height: 67px;
+    background: $color-black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 170%;
+    color: $color-white-secondary;
+}
