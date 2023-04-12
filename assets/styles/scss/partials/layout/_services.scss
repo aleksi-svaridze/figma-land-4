@@ -1,0 +1,86 @@
+.services {
+    padding: 43px 0;
+    border-bottom: 0.7px solid #C7C7C7;
+}
+.services-container {
+    @include flex-row(space-between, center, initial);
+}
+.services-card {
+    @include flex-row(space-between, center, initial);
+    column-gap: 16px;
+    max-width: 300px;
+
+    &__icon {
+        width: 83px;
+        height: 83px;
+        border-radius: 20px;
+        position: relative;
+
+        &--web {
+            background: #EFEAFF;
+        }
+        &--web::after {
+            content: url(../../images/icons/web.svg);
+            position: absolute;
+            width: 41px;
+            height: 41px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &--seo {
+            background: #ECFFDA;
+        }
+        &--seo::after {
+            content: url(../../images/icons/seo.svg);
+            position: absolute;
+            width: 33px;
+            height: 33px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &--ar {
+            background: #DAE6FF;
+        }
+        &--ar::after {
+            content: url(../../images/icons/ar.svg);
+            position: absolute;
+            width: 33px;
+            height: 33px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &--mob {
+            background: #FFE5DA;
+        }
+        &--mob::after {
+            content: url(../../images/icons/mob.svg);
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__text-content {
+
+        &--heading {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 175%;
+            color: $color-black;
+        }
+        &--desc {
+            font-size: 15px;
+            line-height: 175%;
+            color: #969696;
+        }
+    }
+}

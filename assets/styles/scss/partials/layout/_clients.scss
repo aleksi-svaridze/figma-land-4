@@ -1,0 +1,21 @@
+.clients {
+    padding: 150px 0;
+    @include flex-row(initial, center, column);
+
+    &__heading {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 159%;
+        color: $color-black;
+    }
+
+    &__imgs {
+        @include flex-row(space-between, center, initial);
+        column-gap: 115px;
+        margin-top: 12px;
+    }
+
+    &__img {
+        width: 185px;
+    }
+}

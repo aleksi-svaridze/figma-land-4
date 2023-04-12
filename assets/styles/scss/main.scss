@@ -8,12 +8,7 @@
 // ===========> Components
 @import './partials/components/containers';
 @import './partials/components/buttons';
-@import './partials/components/cards';
 
 // ===========> Layouts
-@import './partials/layout/header';
-@import './partials/layout/hero';
-@import './partials/layout/main-post';
-@import './partials/layout/posts';
-@import './partials/layout/subscribe';
-@import './partials/layout/footer';
+@import './partials/pages/blog';
+@import './partials/pages/home';
