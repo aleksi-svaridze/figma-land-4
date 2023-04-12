@@ -1,0 +1,21 @@
+.text-content {
+    padding: 115px 0;
+    margin: 0 auto;
+    @include flex-row(initial, center, column);
+    column-gap: 48px;
+    text-align: center;
+
+    &__heading {
+        max-width: 847px;
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 160%;
+        color: $color-black-secondary;
+    }
+    &__desc {
+        max-width: 692px;
+        font-size: 18px;
+        line-height: 175%;
+        color: #868686;
+    }
+}
