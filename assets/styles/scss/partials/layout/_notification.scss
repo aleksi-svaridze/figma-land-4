@@ -1,0 +1,50 @@
+.notification {
+    padding: 35px 0;
+
+    &-container {
+        @include flex-row(space-between, center, initial);
+        column-gap: 50px;
+    }
+
+    &-card {
+        @include flex-row(initial, center, column);
+        row-gap: 36px;
+        text-align: center;
+        padding: 64px 48px 49px;
+        width: 572px;
+        height: 459px;
+        border-radius: 20px;
+
+        &--gray {
+            background: #F4F4F4;
+        }
+
+        &--blue {
+            background: $color-blue;
+        }
+
+        &__heading {
+            max-width: 365px;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 170%;
+
+            &--blue {
+                color: $color-white;
+            }
+            &--gray {
+                color: $color-black-secondary;
+            }
+        }
+        &__desc {
+            line-height: 170%;
+            
+            &--gray {
+                color: #545454;
+            }
+            &--blue {
+                color: $color-white;
+            }
+        }
+    }
+}

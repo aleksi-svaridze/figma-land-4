@@ -2,7 +2,7 @@
     padding: 115px 0;
     margin: 0 auto;
     @include flex-row(initial, center, column);
-    column-gap: 48px;
+    row-gap: 16px;
     text-align: center;
 
     &__heading {
