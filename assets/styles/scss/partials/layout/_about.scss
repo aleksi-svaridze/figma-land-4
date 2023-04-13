@@ -2,14 +2,35 @@
     padding: 50px 0 200px;
 
     &-container {
-        background-color: red;
-    }
-
-    &-card__image-right {
-
-    }
-
-    &-card__image-left {
         
+    }
+
+    &-card {
+        @include flex-row(space-between, center, initial);
+
+        &__text-content {
+            max-width: 516px;
+            width: 100%;
+            height: 200px;
+            background-color: red;
+        }
+        &__img-content {
+            max-width: 570px;
+            width: 100%;
+            height: 200px;
+            background-color: green;
+        }
+
+        &__image-right {
+
+        }
+    
+        &__image-left {
+            
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 120px;
+        }
     }
 }

@@ -640,9 +640,28 @@ input {
 .about {
   padding: 50px 0 200px;
 }
-.about-container {
+.about-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: initial;
+}
+.about-card__text-content {
+  max-width: 516px;
+  width: 100%;
+  height: 200px;
   background-color: red;
 }
+.about-card__img-content {
+  max-width: 570px;
+  width: 100%;
+  height: 200px;
+  background-color: green;
+}
+.about-card:not(:last-child) {
+  margin-bottom: 120px;
+}
+
 .text-content {
   padding: 115px 0;
   margin: 0 auto;
