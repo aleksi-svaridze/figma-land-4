@@ -1,4 +1,15 @@
 .about {
     padding: 50px 0 200px;
-    background-color: red;
+
+    &-container {
+        background-color: red;
+    }
+
+    &-card__image-right {
+
+    }
+
+    &-card__image-left {
+        
+    }
 }
