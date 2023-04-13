@@ -4,6 +4,27 @@
     &-container {
         @include flex-row(space-between, center, initial);
         column-gap: 50px;
+        position: relative;
+
+        &::before {
+            content: url(../../images/icons/notification_bg_circle-2.svg);
+            width: 497px;
+            height: 505px;
+            position: absolute;
+            left: -372px;
+            bottom: -505px;
+            z-index: -5;
+        }
+
+        &::after {
+            content: url(../../images/icons/notification_bg_circle-1.svg);
+            width: 497px;
+            height: 505px;
+            position: absolute;
+            right: -177px;
+            bottom: -145px;
+            z-index: -5;
+        }
     }
 
     &-card {

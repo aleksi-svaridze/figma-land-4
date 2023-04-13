@@ -637,6 +637,11 @@ input {
   color: #969696;
 }
 
+.about {
+  padding: 50px 0 200px;
+  background-color: red;
+}
+
 .text-content {
   padding: 115px 0;
   margin: 0 auto;
@@ -671,6 +676,25 @@ input {
   flex-direction: initial;
   -moz-column-gap: 50px;
        column-gap: 50px;
+  position: relative;
+}
+.notification-container::before {
+  content: url(../../images/icons/notification_bg_circle-2.svg);
+  width: 497px;
+  height: 505px;
+  position: absolute;
+  left: -372px;
+  bottom: -505px;
+  z-index: -5;
+}
+.notification-container::after {
+  content: url(../../images/icons/notification_bg_circle-1.svg);
+  width: 497px;
+  height: 505px;
+  position: absolute;
+  right: -177px;
+  bottom: -145px;
+  z-index: -5;
 }
 .notification-card {
   display: flex;
