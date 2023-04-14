@@ -1,0 +1,42 @@
+.info-box {
+    @include flex-row(initial, center, initial);
+    column-gap: 25px;
+
+    &__circle {
+        height: 58px;
+        width: 58px;
+        border-radius: 50%;
+        @include flex-row(center, center, initial);
+
+        &::after {
+            content: url(../../images/icons/happy_icon.svg);
+            width: 26px;
+            height: 26px;
+        }
+
+        &--green {
+            background: $color-green;
+        }
+        &--blue {
+            background: $color-blue;
+        }
+        &--purple {
+            background: $color-purple;
+        }
+    }
+
+    &__text-content {
+
+        &--heading {
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 175%;
+            color: $color-black;
+        }
+        &--desc {
+            font-size: 14px;
+            line-height: 175%;
+            color: #868686;
+        }
+    }
+}

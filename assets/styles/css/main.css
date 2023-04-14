@@ -127,6 +127,49 @@ input {
   color: #FFF4F4;
 }
 
+.info-box {
+  display: flex;
+  justify-content: initial;
+  align-items: center;
+  flex-direction: initial;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+.info-box__circle {
+  height: 58px;
+  width: 58px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+}
+.info-box__circle::after {
+  content: url(../../images/icons/happy_icon.svg);
+  width: 26px;
+  height: 26px;
+}
+.info-box__circle--green {
+  background: #08D3BB;
+}
+.info-box__circle--blue {
+  background: #1090CB;
+}
+.info-box__circle--purple {
+  background: #9208D3;
+}
+.info-box__text-content--heading {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 175%;
+  color: #000;
+}
+.info-box__text-content--desc {
+  font-size: 14px;
+  line-height: 175%;
+  color: #868686;
+}
+
 .header {
   height: 100px;
   border-bottom: 0.7px solid #C4C4C4;
@@ -645,18 +688,33 @@ input {
   justify-content: space-between;
   align-items: center;
   flex-direction: initial;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
 }
 .about-card__text-content {
-  max-width: 516px;
+  max-width: 480px;
   width: 100%;
-  height: 200px;
-  background-color: red;
+}
+.about-card__text-content--heading {
+  margin: 43px 0 56px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 170%;
+  color: #252525;
+}
+.about-card__text-content--heading span {
+  color: #1090CB;
+}
+.about-card__text-content--desc {
+  line-height: 170%;
+  color: #545454;
 }
 .about-card__img-content {
-  max-width: 570px;
+  max-width: 600px;
   width: 100%;
-  height: 200px;
-  background-color: green;
+}
+.about-card__img-content--img {
+  width: 100%;
 }
 .about-card:not(:last-child) {
   margin-bottom: 120px;
