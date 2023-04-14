@@ -1,13 +1,11 @@
 .about {
-    padding: 50px 0 200px;
+    padding: 0 0 200px;
 
     &-container {
         
     }
-
     &-card {
         @include flex-row(space-between, center, initial);
-        column-gap: 100px;
 
         &__text-content {
             max-width: 480px;
@@ -32,20 +30,33 @@
         &__img-content {
             max-width: 600px;
             width: 100%;
+            position: relative;
 
             &--img {
                 width: 100%;
             }
+            &--bg-1 {
+                background-image: url(../../images/icons/about_circle-1.svg);
+                background-size: cover;
+                border-radius: 260px;
+                width: 497px;
+                height: 505px;
+                position: absolute;
+                top: 60px;
+                right: -400px;
+            }
+            &--bg-2 {
+                background-image: url(../../images/icons/about_circle-2.svg);
+                background-size: cover;
+                border-radius: 260px;
+                width: 497px;
+                height: 505px;
+                position: absolute;
+                top: -40px;
+                right: -180px;
+                z-index: -5;
+            }
         }
-
-        &__image-right {
-
-        }
-    
-        &__image-left {
-            
-        }
-
         &:not(:last-child) {
             margin-bottom: 120px;
         }

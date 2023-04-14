@@ -1,5 +1,5 @@
 .text-content {
-    padding: 115px 0;
+    padding: 115px 0 100px;
     margin: 0 auto;
     @include flex-row(initial, center, column);
     row-gap: 16px;

@@ -681,15 +681,13 @@ input {
 }
 
 .about {
-  padding: 50px 0 200px;
+  padding: 0 0 200px;
 }
 .about-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: initial;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
 }
 .about-card__text-content {
   max-width: 480px;
@@ -712,16 +710,38 @@ input {
 .about-card__img-content {
   max-width: 600px;
   width: 100%;
+  position: relative;
 }
 .about-card__img-content--img {
   width: 100%;
+}
+.about-card__img-content--bg-1 {
+  background-image: url(../../images/icons/about_circle-1.svg);
+  background-size: cover;
+  border-radius: 260px;
+  width: 497px;
+  height: 505px;
+  position: absolute;
+  top: 60px;
+  right: -400px;
+}
+.about-card__img-content--bg-2 {
+  background-image: url(../../images/icons/about_circle-2.svg);
+  background-size: cover;
+  border-radius: 260px;
+  width: 497px;
+  height: 505px;
+  position: absolute;
+  top: -40px;
+  right: -180px;
+  z-index: -5;
 }
 .about-card:not(:last-child) {
   margin-bottom: 120px;
 }
 
 .text-content {
-  padding: 115px 0;
+  padding: 115px 0 100px;
   margin: 0 auto;
   display: flex;
   justify-content: initial;
