@@ -127,6 +127,26 @@ input {
   color: #FFF4F4;
 }
 
+.main-hero__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: initial;
+  width: 193px;
+  height: 51px;
+  border-radius: 10px;
+  line-height: 204.3%;
+}
+.main-hero__btn--blue {
+  background: #1090CB;
+  color: #fff;
+}
+.main-hero__btn--white {
+  background: #fff;
+  color: #1090CB;
+  border: 1px solid #1090CB;
+}
+
 .info-box {
   display: flex;
   justify-content: initial;
@@ -591,6 +611,37 @@ input {
   line-height: 44px;
   color: #1090CB;
   text-transform: uppercase;
+}
+
+.main-hero {
+  background: rgba(16, 144, 203, 0.102);
+  height: 700px;
+}
+.main-hero__text-content {
+  max-width: 630px;
+}
+.main-hero__text-content-heading {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  color: #000;
+}
+.main-hero__text-content-heading span {
+  color: #1090CB;
+}
+.main-hero__text-content-desc {
+  line-height: 204.3%;
+  color: #5C5C5C;
+  margin: 30px 0 65px;
+}
+.main-hero__btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: initial;
+  display: inline-flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
 }
 
 .services {
