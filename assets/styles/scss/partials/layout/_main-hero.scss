@@ -1,10 +1,38 @@
 .main-hero {
     background: rgba(16, 144, 203, 0.102);
-    height: 700px;
+    height: 743px;
+    position: relative;
+    padding: 30px 0 0;
+
+    &::before {
+        content: url(../../images/icons/main-hero-green-bg.svg);
+        position: absolute;
+        left: 0;
+        bottom: -180px;
+        z-index: 5;
+    }
+    &::after {
+        content: url(../../images/icons/main-hero-blue-bg.svg);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -5;
+    }
     
 
     &__container {
+        @include flex-row(space-between, center, initial);
+        position: relative;
 
+        &::after {
+            content: url(../../images/icons/main-hero-circle.svg);
+            width: 496px;
+            height: 504px;
+            position: absolute;
+            top: 15px;
+            left: -220px;
+            z-index: -5;
+        }
     }
 
     &__text-content {
@@ -32,5 +60,12 @@
         @include flex-row(space-between, center, initial);
         display: inline-flex;
         column-gap: 15px;
+    }
+
+    &__image-content {
+
+        &-img {
+            width: 626px;
+        }
     }
 }
