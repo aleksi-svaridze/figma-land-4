@@ -51,8 +51,12 @@ input {
   font-family: Poppins;
 }
 
+.website-wrapper {
+  overflow: hidden;
+}
+
 .header-container {
-  max-width: 1380px;
+  max-width: 1440px;
   padding: 0 30px;
   margin: 0 auto;
 }
@@ -677,6 +681,7 @@ input {
 }
 .main-hero__image-content-img {
   width: 626px;
+  margin-right: -70px;
 }
 
 .services {
